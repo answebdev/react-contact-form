@@ -7,6 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
+      <ContactForm />
       <Router>
         <Switch>
           <Route exact path='/contact' component={ContactForm} />
