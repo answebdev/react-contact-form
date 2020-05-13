@@ -15,7 +15,7 @@ const ContactForm = () => {
           back to you as soon as possible.
         </p>
         <form
-          action='/thanks'
+          //   action='/thanks'
           name='react-contact-form'
           method='POST'
           data-netlify='true'
