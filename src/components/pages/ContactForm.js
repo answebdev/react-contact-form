@@ -16,7 +16,7 @@ const ContactForm = () => {
         </p>
         <form
           name='react-contact-form'
-          action='/'
+          action='/ContactForm'
           method='POST'
           data-netlify='true'
         >
