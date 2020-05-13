@@ -1,18 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/pages/Home';
 import ContactForm from './components/pages/ContactForm';
-import Thanks from './components/pages/Thanks';
+import About from './components/pages/About';
+import Success from './components/pages/Success';
+import Error from './components/pages/Error';
+import Navigation from './components/layout/Navigation';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
       <Router>
-        <Switch>
-          <Route exact path='/' component={ContactForm} />
-          <Route exact path='/thanks' component={Thanks} />
-          {/* <Route component={Error} /> */}
-        </Switch>
+        <Navigation />
+        <div className='container'>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/contact' component={ContactForm} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/success' component={Success} />
+            <Route component={Error} />
+          </Switch>
+        </div>
       </Router>
     </div>
   );

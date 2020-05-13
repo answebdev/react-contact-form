@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const ContactForm = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <h1>Contact Form</h1>
 
       <header>
@@ -15,7 +19,7 @@ const ContactForm = () => {
           back to you as soon as possible.
         </p>
         <form
-          //   action='/thanks'
+          //   action='/success'
           name='react-contact-form'
           method='POST'
           data-netlify='true'
@@ -49,16 +53,16 @@ const ContactForm = () => {
             </div>
           </div>
           <ul className='actions'>
-            <li>
+            <p>
               <input
                 type='submit'
                 value='Send Message'
                 className='button primary'
               />
-            </li>
+            </p>
           </ul>
         </form>
-        <a href='/thanks'>Click Here</a>
+        <a href='/success'>Click Here</a>
       </div>
     </div>
   );
