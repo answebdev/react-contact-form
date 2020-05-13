@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <div>
+    <div id='app'>
       <h1>Contact Form</h1>
 
       <header>
@@ -14,7 +14,7 @@ const ContactForm = () => {
           questions. Submit your name, email, and a short message, and we'll get
           back to you as soon as possible.
         </p>
-        <form name='react-contact-form' method='POST' netlify>
+        <form name='react-contact-form' method='POST' data-netlify='true'>
           <div className='fields'>
             <div class='field half'>
               <input type='text' name='name' id='name' placeholder='Name' />
