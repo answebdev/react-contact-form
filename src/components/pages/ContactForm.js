@@ -30,7 +30,7 @@ const ContactForm = () => {
                 rows='7'
               ></textarea>
             </div>
-            <div className='field'>
+            {/* <div className='field'>
               <input
                 type='file'
                 name='myfile'
@@ -38,7 +38,7 @@ const ContactForm = () => {
                 placeholder='Upload File'
                 rows='7'
               />
-            </div>
+            </div> */}
             <div className='field'>
               <div data-netlify-recaptcha='true'></div>
             </div>
