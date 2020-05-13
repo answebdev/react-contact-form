@@ -22,7 +22,7 @@ export class ContactForm extends Component {
               action='/success'
               name='react-contact-form'
               method='POST'
-              netlify
+              data-netlify='true'
             >
               <Form.Group>
                 <Form.Label>Name</Form.Label>
