@@ -21,7 +21,7 @@ const ContactForm = () => {
           data-netlify='true'
         >
           <div className='fields'>
-            <div class='field half'>
+            <div className='field half'>
               <input type='text' name='name' id='name' placeholder='Name' />
             </div>
             <div className='field half'>
@@ -53,7 +53,7 @@ const ContactForm = () => {
               <input
                 type='submit'
                 value='Send Message'
-                class='button primary'
+                className='button primary'
               />
             </li>
           </ul>

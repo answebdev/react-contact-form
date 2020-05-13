@@ -4,7 +4,7 @@ const Thanks = () => {
   return (
     <div>
       <div className='content'>
-        <p>Thank you.</p>
+        <p>Thank you</p>
       </div>
     </div>
   );
