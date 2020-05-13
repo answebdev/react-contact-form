@@ -58,6 +58,7 @@ const ContactForm = () => {
             </li>
           </ul>
         </form>
+        <a href='/thanks'>Click Here</a>
       </div>
     </div>
   );
