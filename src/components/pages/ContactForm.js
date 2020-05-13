@@ -14,7 +14,7 @@ const ContactForm = () => {
           questions. Submit your name, email, and a short message, and we'll get
           back to you as soon as possible.
         </p>
-        <form name='contact-form' method='POST' netlify>
+        <form name='contact-form' netlify>
           <div className='fields'>
             <div class='field half'>
               <input type='text' name='name' id='name' placeholder='Name' />
