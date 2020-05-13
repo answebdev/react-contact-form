@@ -39,13 +39,19 @@ export class ContactForm extends Component {
                 </Form.Text>
               </Form.Group>
               <Form.Group controlId='exampleForm.ControlTextarea1'>
-                <Form.Label>Example textarea</Form.Label>
+                <Form.Label>Message</Form.Label>
                 <Form.Control as='textarea' rows='5' />
               </Form.Group>
               <div className='field'>
                 <div data-netlify-recaptcha='true'></div>
               </div>
-              <Button variant='primary' type='submit' id='submit-btn'>
+              <Button
+                className='actions'
+                variant='primary'
+                type='submit'
+                value='Send Message'
+                id='submit-btn'
+              >
                 Send Message
               </Button>
             </Form>
