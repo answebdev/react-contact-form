@@ -42,8 +42,8 @@ export class ContactForm extends Component {
               <div className='field'>
                 <div data-netlify-recaptcha='true'></div>
               </div>
-              <Button variant='primary' type='submit'>
-                Submit
+              <Button a href='/success' variant='primary' type='submit'>
+                Send Message
               </Button>
             </Form>
             <a href='/success'>Click Here</a>
