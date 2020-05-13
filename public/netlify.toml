@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/"
-  to = "thanks"
+  to = "/thanks"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
