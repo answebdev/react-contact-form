@@ -6,6 +6,7 @@ import About from './components/pages/About';
 import Success from './components/pages/Success';
 import Error from './components/pages/Error';
 import Navigation from './components/layout/Navigation';
+import Footer from './components/pages/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      <Footer />
     </div>
   );
 }

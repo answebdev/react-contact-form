@@ -2,6 +2,10 @@
   text-align: center;
 } */
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 a {
   /* color: #007bff; */
   color: #ffeeff;
@@ -9,3 +13,49 @@ a {
   background-color: transparent;
   padding: 0 10px;
 }
+
+/* Navbar */
+
+.navbar {
+  background-color: #3e63bd !important;
+}
+
+.navbar-brand {
+  width: 75%;
+  left: 0;
+  margin: 0 auto;
+  margin-left: 40px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+/* End Navbar */
+
+#click {
+  color: #3e63bd;
+}
+
+#submit-btn {
+  margin-bottom: 80px;
+}
+
+/* Footer */
+.footer {
+  background: #3e63bd;
+  clear: both;
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#footer-text {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+#react {
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* End Footer */
