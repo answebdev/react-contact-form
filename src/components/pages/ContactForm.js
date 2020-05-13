@@ -1,25 +1,55 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet';
+import { Form, Button } from 'react-bootstrap';
 
-const ContactForm = () => {
-  return (
-    <div>
-      <Helmet>
-        <title>Contact</title>
-      </Helmet>
-      <h1>Contact Form</h1>
+export class ContactForm extends Component {
+  render() {
+    return (
+      <Fragment>
+        <div>
+          <Helmet>
+            <title>Contact</title>
+          </Helmet>
+          <h1>Contact Form</h1>
 
-      <header>
-        <h2>Get in touch</h2>
-      </header>
-      <div className='content'>
-        <p>
-          <strong>Contact Us</strong> Feel free to contact us with any
-          questions. Submit your name, email, and a short message, and we'll get
-          back to you as soon as possible.
-        </p>
-        <form
-          //   action='/success'
+          <div className='content'>
+            <p>
+              Feel free to contact us with any questions. Submit your name,
+              email, and a short message, and we'll get back to you as soon as
+              possible.
+            </p>
+            <Form
+              action='/success'
+              name='react-contact-form'
+              method='POST'
+              data-netlify='true'
+            >
+              <Form.Group controlId='formBasicEmail'>
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type='email' placeholder='Enter email' />
+                <Form.Text className='text-muted'>
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
+
+              <Form.Group controlId='formBasicPassword'>
+                <Form.Label>Password</Form.Label>
+                <Form.Control type='password' placeholder='Password' />
+              </Form.Group>
+              <Form.Group controlId='exampleForm.ControlTextarea1'>
+                <Form.Label>Example textarea</Form.Label>
+                <Form.Control as='textarea' rows='3' />
+              </Form.Group>
+              <div className='field'>
+                <div data-netlify-recaptcha='true'></div>
+              </div>
+              <Button variant='primary' type='submit'>
+                Submit
+              </Button>
+            </Form>
+            <a href='/success'>Click Here</a>
+            {/* <form
+            action='/success'
           name='react-contact-form'
           method='POST'
           data-netlify='true'
@@ -39,15 +69,6 @@ const ContactForm = () => {
                 rows='7'
               ></textarea>
             </div>
-            {/* <div className='field'>
-              <input
-                type='file'
-                name='myfile'
-                id='myfile'
-                placeholder='Upload File'
-                rows='7'
-              />
-            </div> */}
             <div className='field'>
               <div data-netlify-recaptcha='true'></div>
             </div>
@@ -62,10 +83,13 @@ const ContactForm = () => {
             </p>
           </ul>
         </form>
-        <a href='/success'>Click Here</a>
-      </div>
-    </div>
-  );
-};
+        <a href='/success'>Click Here</a> */}
+            <br />
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
+}
 
 export default ContactForm;
