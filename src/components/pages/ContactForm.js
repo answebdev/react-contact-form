@@ -55,43 +55,6 @@ export class ContactForm extends Component {
                 Send Message
               </Button>
             </Form>
-
-            {/* <form
-            action='/success'
-          name='react-contact-form'
-          method='POST'
-          data-netlify='true'
-        >
-          <div className='fields'>
-            <div className='field half'>
-              <input type='text' name='name' id='name' placeholder='Name' />
-            </div>
-            <div className='field half'>
-              <input type='email' name='email' id='email' placeholder='Email' />
-            </div>
-            <div className='field'>
-              <textarea
-                name='message'
-                id='message'
-                placeholder='Message'
-                rows='7'
-              ></textarea>
-            </div>
-            <div className='field'>
-              <div data-netlify-recaptcha='true'></div>
-            </div>
-          </div>
-          <ul className='actions'>
-            <p>
-              <input
-                type='submit'
-                value='Send Message'
-                className='button primary'
-              />
-            </p>
-          </ul>
-        </form>
-        <a href='/success'>Click Here</a> */}
             <br />
           </div>
         </div>
