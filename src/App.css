@@ -1,6 +1,11 @@
-/* .App {
-  text-align: center;
-} */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
 
 body {
   font-family: 'Oxygen', sans-serif;
@@ -44,6 +49,10 @@ a:hover {
   background: #3e63bd;
 }
 
+#error-btn {
+  background: #3e63bd;
+}
+
 /* Footer */
 .footer {
   background: #3e63bd;
@@ -64,4 +73,54 @@ a:hover {
   font-size: 16px;
   margin-top: 5px;
 }
+
+/* Code to make YouTube videos responsive */
+.iframe-container {
+  overflow: hidden;
+
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /* End Footer */
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /* body {
+    background-color: red;
+  } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /* body {
+    background-color: yellow;
+  } */
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* body {
+    background-color: steelblue;
+  } */
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  /* body {
+    background-color: brown;
+  } */
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* body {
+    background-color: burlywood;
+  } */
+}
