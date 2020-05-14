@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { Card, Button } from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Fade from 'react-reveal/Fade';
 
 class Home extends Component {
   render() {
@@ -11,8 +12,9 @@ class Home extends Component {
           <title>Home</title>
         </Helmet>
         <div className='content'>
-          <h1>Home Page</h1>
-
+          <Fade left>
+            <h1>Home Page</h1>
+          </Fade>
           <div className='row'>
             <div className='col-md-4'>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
