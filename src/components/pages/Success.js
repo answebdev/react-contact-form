@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
 const Success = () => {
@@ -7,10 +8,14 @@ const Success = () => {
       <Helmet>
         <title>Success</title>
       </Helmet>
-      <div className='content'>
-        <h2>Thank you!</h2>
-        <p>Your message has been sent.</p>
-      </div>
+      <Container fluid>
+        <Row>
+          <Col md={12}>
+            <h2 className='text-center'>Thank you!</h2>
+            <p className='text-center'>Your message has been sent.</p>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

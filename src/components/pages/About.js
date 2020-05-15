@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import { SRLWrapper } from 'simple-react-lightbox';
 import girlSmall from '../../img/girl-small.jpg';
@@ -13,14 +14,14 @@ const About = () => {
       <Helmet>
         <title>About</title>
       </Helmet>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-12'>
+      <Container fluid>
+        <Row>
+          <Col md={12}>
             <h1>About Page</h1>
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-md-6'>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
             <div class='iframe-container'>
               <iframe
                 title='ESL Toolbox'
@@ -34,10 +35,10 @@ const About = () => {
               ></iframe>
             </div>
             <br />
-          </div>
+          </Col>
 
-          <div className='col-md-6'>
-            <img id='girl' src={girlSmall} alt='Girl' />
+          <Col md={6}>
+            <img className='about-pic' id='girl' src={girlSmall} alt='Girl' />
             <p>
               What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. Lorem Ipsum has been the
@@ -55,14 +56,14 @@ const About = () => {
               letters, as opposed to using 'Content here, content here', making
               it look like readable English.
             </p>
-          </div>
-        </div>
+          </Col>
+        </Row>
 
         <br />
         <br />
 
-        <div className='row'>
-          <div className='col-md-12'>
+        <Row>
+          <Col md={12}>
             <h3>
               <a
                 href='https://simple-react-lightbox.dev/'
@@ -73,37 +74,37 @@ const About = () => {
                 SimpleReactLightbox
               </a>
             </h3>
-          </div>
-        </div>
+          </Col>
+        </Row>
 
-        <div className='row'>
-          <div className='col-md-6'>
+        <Row>
+          <Col md={6}>
             <SRLWrapper>
               <a
                 href='https://images.pexels.com/photos/69494/pexels-photo-69494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
                 data-attribute='SRL'
               >
-                <img src={girlSmall} alt='Girl' />
+                <img className='about-pic' src={girlSmall} alt='Girl' />
               </a>
             </SRLWrapper>
-          </div>
+          </Col>
 
-          <div className='col-md-6'>
+          <Col md={6}>
             <SRLWrapper>
               <a
                 href='https://images.pexels.com/photos/3850036/pexels-photo-3850036.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
                 data-attribute='SRL'
               >
-                <img src={childSmall} alt='Child' />
+                <img className='about-pic' src={childSmall} alt='Child' />
               </a>
             </SRLWrapper>
-          </div>
-        </div>
+          </Col>
+        </Row>
 
         <br />
         <br />
-        <div className='row'>
-          <div className='col-md-12'>
+        <Row>
+          <Col md={12}>
             <h3>
               <a
                 href='https://github.com/aautio/react-modal-image'
@@ -114,23 +115,33 @@ const About = () => {
                 React Modal Image
               </a>
             </h3>
-          </div>
-        </div>
+          </Col>
+        </Row>
 
-        <div className='row'>
-          <div className='col-md-6'>
-            <ModalImage small={girlSmall} large={girl} alt='Girl' />
-          </div>
-          <div className='col-md-6'>
-            <ModalImage small={childSmall} large={child} alt='Child' />
-          </div>
-        </div>
+        <Row>
+          <Col md={6}>
+            <ModalImage
+              className='about-pic'
+              small={girlSmall}
+              large={girl}
+              alt='Girl'
+            />
+          </Col>
+          <Col md={6}>
+            <ModalImage
+              className='about-pic'
+              small={childSmall}
+              large={child}
+              alt='Child'
+            />
+          </Col>
+        </Row>
 
         <br />
         <br />
         <br />
         <br />
-      </div>
+      </Container>
     </div>
   );
 };

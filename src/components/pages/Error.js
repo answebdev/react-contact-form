@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
 const Error = () => {
@@ -7,15 +8,23 @@ const Error = () => {
       <Helmet>
         <title>Error</title>
       </Helmet>
-      <div className='centered-error'>
-        <h1 className='text-center pnf'>404 Page Not Found</h1>
+      <Container fluid>
+        <Row>
+          <Col md={12}>
+            <h1 className='text-center'>404 Page Not Found</h1>
+          </Col>
+        </Row>
         <br />
-        <p className='text-center'>
-          <a class='btn btn-primary' id='error-btn' href='/'>
-            <i className='fa fa-home'></i> Take Me Home
-          </a>
-        </p>
-      </div>
+        <Row>
+          <Col md={12}>
+            <p className='text-center'>
+              <a class='btn btn-primary' id='error-btn' href='/'>
+                <i className='fa fa-home'></i> Take Me Home
+              </a>
+            </p>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

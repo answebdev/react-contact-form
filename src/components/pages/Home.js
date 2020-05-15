@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Card, Button } from 'react-bootstrap';
+import { Container, Col, Row, Card, Button } from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Fade from 'react-reveal/Fade';
 
@@ -11,12 +11,12 @@ class Home extends Component {
         <Helmet>
           <title>Home</title>
         </Helmet>
-        <div className='content'>
+        <Container fluid>
           <Fade left>
             <h1>Home Page</h1>
           </Fade>
-          <div className='row'>
-            <div className='col-md-4'>
+          <Row>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -33,8 +33,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -51,8 +51,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -69,11 +69,11 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className='row'>
-            <div className='col-md-4'>
+          <Row>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -90,8 +90,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -108,8 +108,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -126,11 +126,11 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className='row'>
-            <div className='col-md-4'>
+          <Row>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -147,8 +147,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -165,8 +165,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -183,11 +183,11 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className='row'>
-            <div className='col-md-4'>
+          <Row>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -204,8 +204,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -222,8 +222,8 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-            <div className='col-md-4'>
+            </Col>
+            <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
                 <Card style={{ width: '18rem', marginBottom: '80px' }}>
                   <Card.Img
@@ -240,9 +240,9 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </ScrollAnimation>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

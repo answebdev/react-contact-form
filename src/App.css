@@ -24,6 +24,12 @@ a:hover {
   text-decoration: none;
 }
 
+.about-pic {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -98,28 +104,50 @@ a:hover {
   /* body {
     background-color: red;
   } */
+
+  .about-pic {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
   /* body {
     background-color: yellow;
   } */
+
+  .about-pic {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
   /* body {
     background-color: steelblue;
   } */
+  .about-pic {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 640px) {
   /* body {
     background-color: brown;
   } */
+  .about-pic {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
   /* body {
     background-color: burlywood;
   } */
+  .about-pic {
+    width: 100%;
+    height: auto;
+  }
 }
