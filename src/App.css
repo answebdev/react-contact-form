@@ -157,18 +157,67 @@ a:hover {
   /* body {
     background-color: brown;
   } */
+
   .about-pic {
     width: 100%;
     height: auto;
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 431px) and (max-width: 480px) {
+  /* body {
+    background-color: black;
+  } */
+
+  #brand-link {
+    float: inline-end;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
   /* body {
     background-color: burlywood;
   } */
+
+  #brand-link {
+    float: inline-end;
+    margin-top: 5px;
+    margin-bottom: -60px;
+    font-size: 28px;
+  }
+
+  button.navbar-toggler.collapsed {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
   .about-pic {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /* body {
+    background-color: pink;
+  } */
+
+  #brand-link {
+    float: inline-end;
+    margin-top: 12px;
+    margin-bottom: -60px;
+    font-size: 18px;
+  }
+
+  button.navbar-toggler.collapsed {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    font-size: 12px;
   }
 }
