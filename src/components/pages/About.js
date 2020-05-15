@@ -11,11 +11,10 @@ import ModalImage from 'react-modal-image';
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
       <Container fluid>
-        <Helmet>
-          <title>About</title>
-        </Helmet>
-
         <Row>
           <Col md={12}>
             <h1>About Page</h1>
