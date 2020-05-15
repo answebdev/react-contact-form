@@ -9,6 +9,7 @@ export class Navigation extends Component {
       <div className='header'>
         <Navbar className='navbar-dark' collapseOnSelect expand='lg'>
           <Navbar.Brand
+            href='/'
             id='app-name'
             onSelect={() =>
               Scroll.scrollTo('home', {
