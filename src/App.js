@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
 import ContactForm from './components/pages/ContactForm';
@@ -17,16 +17,18 @@ function App() {
     <div className='App'>
       <SimpleReactLightbox>
         <Router>
-          <Navigation />
-          <div className='container'>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/contact' component={ContactForm} />
-              <Route exact path='/about' component={About} />
-              <Route exact path='/success' component={Success} />
-              <Route component={Error} />
-            </Switch>
-          </div>
+          <Fragment>
+            <Navigation />
+            <div className='container'>
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/contact' component={ContactForm} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/success' component={Success} />
+                <Route component={Error} />
+              </Switch>
+            </div>
+          </Fragment>
         </Router>
         <Footer />
       </SimpleReactLightbox>
