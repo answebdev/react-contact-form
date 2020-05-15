@@ -6,7 +6,7 @@ export class Navigation extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar bg='dark' variant='dark'>
+        <Navbar className='navbar navbar-expand-lg navbar-dark bg-primary'>
           <Navbar.Brand href='/'>Practice React App</Navbar.Brand>
           <Nav className='mr-auto'>
             <Link to='/'>Home</Link>
