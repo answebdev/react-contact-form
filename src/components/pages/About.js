@@ -94,7 +94,7 @@ const About = () => {
                 href='https://images.pexels.com/photos/3850036/pexels-photo-3850036.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
                 data-attribute='SRL'
               >
-                <img src={childSmall} alt='Girl' />
+                <img src={childSmall} alt='Child' />
               </a>
             </SRLWrapper>
           </div>
