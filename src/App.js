@@ -8,24 +8,28 @@ import Error from './components/pages/Error';
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import SimpleReactLightbox from 'simple-react-lightbox';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
-      <Router>
-        <Navigation />
-        <div className='container'>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/contact' component={ContactForm} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/success' component={Success} />
-            <Route component={Error} />
-          </Switch>
-        </div>
-      </Router>
-      <Footer />
+      <SimpleReactLightbox>
+        <Router>
+          <Navigation />
+          <div className='container'>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/contact' component={ContactForm} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/success' component={Success} />
+              <Route component={Error} />
+            </Switch>
+          </div>
+        </Router>
+        <Footer />
+      </SimpleReactLightbox>
     </div>
   );
 }

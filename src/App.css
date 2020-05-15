@@ -77,7 +77,6 @@ a:hover {
 /* Code to make YouTube videos responsive */
 .iframe-container {
   overflow: hidden;
-
   padding-top: 56.25%;
   position: relative;
 }
