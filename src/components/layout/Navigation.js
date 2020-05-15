@@ -6,21 +6,12 @@ export class Navigation extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar
-          collapseOnSelect
-          className='navbar navbar-expand-lg navbar-dark bg-primary'
-        >
+        <Navbar className='navbar navbar-expand-lg navbar-dark bg-primary'>
           <Navbar.Brand href='/'>Practice React App</Navbar.Brand>
           <Nav className='mr-auto'>
-            <Link eventKey='1' to='/'>
-              Home
-            </Link>
-            <Link eventKey='2' to='/contact'>
-              Contact
-            </Link>
-            <Link eventKey='3' to='/about'>
-              About
-            </Link>
+            <Link to='/'>Home</Link>
+            <Link to='/contact'>Contact</Link>
+            <Link to='/about'>About</Link>
           </Nav>
         </Navbar>
       </Fragment>
