@@ -18,7 +18,11 @@ export class Navigation extends Component {
               })
             }
           >
-            Practice React App
+            <span>
+              <a id='brand-link' href='/'>
+                Practice React App
+              </a>{' '}
+            </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>

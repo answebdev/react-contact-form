@@ -54,6 +54,10 @@ a:hover {
   /* margin-left: 10px; */
 }
 
+#brand-link {
+  color: #ffeeff;
+}
+
 .nav-link {
   color: #ffeeff !important;
 }
