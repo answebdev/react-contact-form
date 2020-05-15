@@ -44,6 +44,19 @@ a:hover {
   font-size: 22px;
   letter-spacing: 0.5px;
 }
+
+#app-name {
+  color: #ffeeff;
+  /* margin-left: 10px; */
+}
+
+.nav-link {
+  color: #ffeeff !important;
+}
+
+.nav-link:hover {
+  color: #c7d1d8 !important;
+}
 /* End Navbar */
 
 #click {
