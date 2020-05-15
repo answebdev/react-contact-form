@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Media } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import { SRLWrapper } from 'simple-react-lightbox';
 import girlSmall from '../../img/girl-small.jpg';
 import childSmall from '../../img/child-small.jpg';
 import girl from '../../img/girl.jpg';
 import child from '../../img/child.jpg';
+import react from '../../img/react.png';
 import ModalImage from 'react-modal-image';
 
 const About = () => {
@@ -59,6 +60,32 @@ const About = () => {
           </Col>
         </Row>
 
+        <br />
+        <br />
+
+        <Row>
+          <Col md={12}>
+            <Media>
+              <img
+                width={75}
+                height={75}
+                className='mr-3'
+                src={react}
+                alt='Generic placeholder'
+              />
+              <Media.Body>
+                <h5>Media Heading</h5>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin commodo. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                  congue felis in faucibus.
+                </p>
+              </Media.Body>
+            </Media>
+          </Col>
+        </Row>
         <br />
         <br />
 
