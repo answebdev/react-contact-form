@@ -7,7 +7,7 @@ export class Navigation extends Component {
   render() {
     return (
       <div className='header'>
-        <Navbar collapseOnSelect expand='lg'>
+        <Navbar className='navbar-dark' collapseOnSelect expand='lg'>
           <Navbar.Brand
             id='app-name'
             onSelect={() =>
