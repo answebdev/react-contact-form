@@ -25,6 +25,21 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
+.react-spring-card {
+  width: 45ch;
+  height: 45ch;
+  background: grey;
+  border-radius: 5px;
+  /* background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40); */
+  background-image: url('../src/img/girl-small.jpg');
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
 a {
   /* color: #007bff; */
   color: #ffeeff;
@@ -152,7 +167,7 @@ a:hover {
 } */
 /* End Navbar */
 
-#click {
+.click {
   color: #3e63bd;
 }
 
@@ -185,6 +200,7 @@ a:hover {
   font-size: 16px;
   margin-top: 5px;
 }
+/* End Footer */
 
 /* Code to make YouTube videos responsive */
 .iframe-container {
@@ -201,8 +217,7 @@ a:hover {
   top: 0;
   width: 100%;
 }
-
-/* End Footer */
+/* End Code */
 
 /* ===== MEDIA QUERIES ===== */
 
@@ -219,6 +234,11 @@ a:hover {
     width: 100%;
     height: auto;
   }
+
+  .react-spring-card {
+    width: 45ch;
+    height: 45ch;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
@@ -233,6 +253,11 @@ a:hover {
   .about-pic {
     width: 100%;
     height: auto;
+  }
+
+  .react-spring-card {
+    width: 35ch;
+    height: 35ch;
   }
 }
 
@@ -298,6 +323,11 @@ a:hover {
     text-align: center;
     justify-content: center;
   }
+
+  .react-spring-card {
+    width: 40ch;
+    height: 40ch;
+  }
 }
 
 @media screen and (min-width: 431px) and (max-width: 470px) {
@@ -331,6 +361,11 @@ a:hover {
   #brand-link {
     float: inline-end;
     font-size: 28px;
+  }
+
+  .react-spring-card {
+    width: 35ch;
+    height: 35ch;
   }
 }
 
@@ -374,6 +409,11 @@ a:hover {
     width: 100%;
     height: auto;
   }
+
+  .react-spring-card {
+    width: 30ch;
+    height: 30ch;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
@@ -414,5 +454,10 @@ a:hover {
 
   .nav-link {
     font-size: 12px;
+  }
+
+  .react-spring-card {
+    width: 20ch;
+    height: 20ch;
   }
 }

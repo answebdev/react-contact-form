@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Media } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import { SRLWrapper } from 'simple-react-lightbox';
 import girlSmall from '../../img/girl-small.jpg';
@@ -7,9 +7,27 @@ import childSmall from '../../img/child-small.jpg';
 import girl from '../../img/girl.jpg';
 import child from '../../img/child.jpg';
 import react from '../../img/react.png';
+import notes from '../../img/notes.pdf';
 import ModalImage from 'react-modal-image';
 
+import { useSpring, animated } from 'react-spring';
+
+// React-Spring Example: https://codesandbox.io/embed/rj998k4vmm
+const calc = (x, y) => [
+  -(y - window.innerHeight / 2) / 20,
+  (x - window.innerWidth / 2) / 20,
+  1.1,
+];
+const trans = (x, y, s) =>
+  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
 const About = () => {
+  // React-Spring:
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 },
+  }));
+
   return (
     <div>
       <Helmet>
@@ -21,6 +39,7 @@ const About = () => {
             <h1>About Page</h1>
           </Col>
         </Row>
+
         <Row>
           <Col md={6}>
             <div class='iframe-container'>
@@ -39,23 +58,52 @@ const About = () => {
           </Col>
 
           <Col md={6}>
-            <img className='about-pic' id='girl' src={girlSmall} alt='Girl' />
+            {/* React-Spring */}
+            <animated.div
+              class='react-spring-card'
+              onMouseMove={({ clientX: x, clientY: y }) =>
+                set({ xys: calc(x, y) })
+              }
+              onMouseLeave={() => set({ xys: [0, 0, 1] })}
+              style={{ transform: props.xys.interpolate(trans) }}
+            />
+
+            <br />
+
+            {/* Lightbox2 Lokesh Dhakar */}
+            {/* <a
+              href={childSmall}
+              data-lightbox='Child'
+              alt='Child'
+              title='Child'
+              class='img-fluid mb-3'
+            >
+              <img src={childSmall} class='img-fluid mb-3' alt='' />
+            </a> */}
             <p>
-              What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum. Why do we use it? It is a long
-              established fact that a reader will be distracted by the readable
-              content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content here', making
-              it look like readable English.
+              <strong>This image uses React-Spring.</strong> React-spring is a
+              spring-physics based animation library that should cover most of
+              your UI related animation needs. It gives you tools flexible
+              enough to confidently cast your ideas into moving interfaces.
+              Visit the website
+              <a
+                className='click'
+                href='https://www.react-spring.io/'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                here
+              </a>
+              and this 3D Card Effect
+              <a
+                className='click'
+                href='https://codesandbox.io/embed/rj998k4vmm'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                here
+              </a>
+              .
             </p>
           </Col>
         </Row>
@@ -65,25 +113,21 @@ const About = () => {
 
         <Row>
           <Col md={12}>
-            <Media>
-              <img
-                width={75}
-                height={75}
-                className='mr-3'
+            <div>
+              <a
                 src={react}
-                alt='Generic placeholder'
-              />
-              <Media.Body>
-                <h5>Media Heading</h5>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate fringilla. Donec lacinia
-                  congue felis in faucibus.
-                </p>
-              </Media.Body>
-            </Media>
+                href={notes}
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                <i class='fas fa-file-download' style={{ color: '#3e63bd' }}>
+                  &nbsp;&nbsp;
+                  <span style={{ fontFamily: 'Oxygen', color: '#3e63bd' }}>
+                    Download The Notes Here
+                  </span>
+                </i>
+              </a>
+            </div>
           </Col>
         </Row>
         <br />

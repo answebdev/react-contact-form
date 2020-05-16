@@ -19,9 +19,9 @@ export class ContactForm extends Component {
                   <p>
                     Feel free to contact us with any questions. Submit your
                     name, email, and a short message, and we'll get back to you
-                    as soon as possible.{' '}
-                    <a id='click' href='/success'>
-                      Click Here
+                    as soon as possible. Click
+                    <a className='click' href='/success'>
+                      here.
                     </a>
                   </p>
                   <Form
