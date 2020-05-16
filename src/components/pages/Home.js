@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div>
         <Helmet>
-          <title>Home</title>
+          <title>React Playground</title>
         </Helmet>
         <Container fluid>
           <Fade left>
@@ -23,9 +23,9 @@ class Home extends Component {
                 rel='noopener noreferrer'
                 target='_blank'
               >
-                here
+                <span style={{ marginLeft: '-10px' }}> here</span>
               </a>
-              .
+              <span style={{ marginLeft: '-10px' }}>.</span>
             </p>
           </Fade>
           <Row>

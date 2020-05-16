@@ -6,7 +6,7 @@ const Error = () => {
   return (
     <div>
       <Helmet>
-        <title>Error</title>
+        <title>React Playground | Error</title>
       </Helmet>
       <Container fluid>
         <Row>

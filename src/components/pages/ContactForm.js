@@ -8,7 +8,7 @@ export class ContactForm extends Component {
       <Fragment>
         <div>
           <Helmet>
-            <title>Contact</title>
+            <title>React Playground | Contact</title>
           </Helmet>
           <Container>
             <Row>
@@ -21,7 +21,7 @@ export class ContactForm extends Component {
                     name, email, and a short message, and we'll get back to you
                     as soon as possible. Click
                     <a className='click' href='/success'>
-                      here.
+                      <span style={{ marginLeft: '-10px' }}> here.</span>
                     </a>
                   </p>
                   <Form

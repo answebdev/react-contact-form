@@ -7,7 +7,7 @@ import childSmall from '../../img/child-small.jpg';
 import girl from '../../img/girl.jpg';
 import child from '../../img/child.jpg';
 import react from '../../img/react.png';
-import notes from '../../img/notes.pdf';
+import whitespace from '../../img/whitespace-hack.pdf';
 import ModalImage from 'react-modal-image';
 
 import { useSpring, animated } from 'react-spring';
@@ -31,7 +31,7 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title>About</title>
+        <title>React Playground | About</title>
       </Helmet>
       <Container fluid>
         <Row>
@@ -92,18 +92,19 @@ const About = () => {
                 rel='noopener noreferrer'
                 target='_blank'
               >
-                here
+                <span style={{ marginLeft: '-10px' }}> here</span>
               </a>
-              and this 3D Card Effect
+              <span style={{ marginLeft: '-10px' }}> and</span> this 3D Card
+              Effect
               <a
                 className='click'
                 href='https://codesandbox.io/embed/rj998k4vmm'
                 rel='noopener noreferrer'
                 target='_blank'
               >
-                here
+                <span style={{ marginLeft: '-10px' }}> here</span>
               </a>
-              .
+              <span style={{ marginLeft: '-10px' }}>.</span>
             </p>
           </Col>
         </Row>
@@ -116,7 +117,7 @@ const About = () => {
             <div>
               <a
                 src={react}
-                href={notes}
+                href={whitespace}
                 rel='noopener noreferrer'
                 target='_blank'
               >

@@ -7,7 +7,7 @@ class Footer extends Component {
         <footer className='footer'>
           <div className='container'>
             <span id='footer-text'>
-              Practice React App &nbsp;<i id='react' class='fab fa-react'></i>
+              React Playground &nbsp;<i id='react' class='fab fa-react'></i>
             </span>
           </div>
         </footer>

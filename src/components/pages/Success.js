@@ -6,7 +6,7 @@ const Success = () => {
   return (
     <div>
       <Helmet>
-        <title>Success</title>
+        <title>React Playground | Success</title>
       </Helmet>
       <Container fluid>
         <Row>
