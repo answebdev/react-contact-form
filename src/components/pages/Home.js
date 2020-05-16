@@ -14,6 +14,19 @@ class Home extends Component {
         <Container fluid>
           <Fade left>
             <h1>Home Page</h1>
+            <p>
+              For more information on <strong>React Animate On Scroll,</strong>{' '}
+              click
+              <a
+                className='click'
+                href='https://dbramwell.github.io/react-animate-on-scroll/'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                here
+              </a>
+              .
+            </p>
           </Fade>
           <Row>
             <Col md={4}>
