@@ -1,5 +1,19 @@
+/* * {
+  box-sizing: border-box;
+} */
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
 }
 
 html {
@@ -30,8 +44,80 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/* Navbar */
+#app-logo {
+  width: 30px;
+  margin-bottom: 10px;
+}
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  background-color: #3e63bd !important;
+  border-bottom: solid 1px var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.nav-title {
+  /* font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px; */
+  color: #ffeeff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding-bottom: 0.5em;
+  /* margin-bottom: -10px; */
+}
+
+#links {
+  color: #c7d1d8 !important;
+}
+
+#links {
+  margin-bottom: -15px;
+  float: inherit;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  color: #fff;
+  /* padding: 0.45rem; */
+  margin: 0 0.25rem;
+  margin-bottom: -30px;
+}
+
+.navbar a:hover {
+  color: var(--light-color);
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+/* List */
+.list {
+  margin: 0.5rem 0;
+}
+
+.list li {
+  padding-bottom: 0.3rem;
+}
+
+/* NAVBAR WITH HAMBURGER COLLAPSE: */
+/* 
 .navbar {
   background-color: #3e63bd !important;
 }
@@ -51,7 +137,6 @@ a:hover {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  /* margin-left: 10px; */
 }
 
 #brand-link {
@@ -64,7 +149,7 @@ a:hover {
 
 .nav-link:hover {
   color: #c7d1d8 !important;
-}
+} */
 /* End Navbar */
 
 #click {
@@ -126,6 +211,10 @@ a:hover {
     background-color: red;
   } */
 
+  .nav-title {
+    padding-bottom: 0.5em;
+  }
+
   .about-pic {
     width: 100%;
     height: auto;
@@ -137,6 +226,10 @@ a:hover {
     background-color: yellow;
   } */
 
+  .nav-title {
+    padding-bottom: 0.5em;
+  }
+
   .about-pic {
     width: 100%;
     height: auto;
@@ -147,27 +240,93 @@ a:hover {
   /* body {
     background-color: steelblue;
   } */
+
+  .nav-title {
+    padding-bottom: 0.5em;
+  }
+
   .about-pic {
     width: 100%;
     height: auto;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 640px) {
+@media screen and (min-width: 551px) and (max-width: 640px) {
   /* body {
     background-color: brown;
   } */
 
+  .navbar {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .nav-title {
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+
   .about-pic {
     width: 100%;
     height: auto;
   }
 }
 
-@media screen and (min-width: 431px) and (max-width: 480px) {
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* body {
+    background-color: salmon;
+  } */
+
+  .navbar {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .nav-title {
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
   /* body {
     background-color: black;
   } */
+
+  .navbar {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .nav-title {
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #brand-link {
+    float: inline-end;
+    margin-top: 5px;
+    margin-bottom: -60px;
+    font-size: 28px;
+  }
 
   #brand-link {
     float: inline-end;
@@ -179,6 +338,22 @@ a:hover {
   /* body {
     background-color: burlywood;
   } */
+
+  .navbar {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .nav-title {
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
 
   #brand-link {
     float: inline-end;
@@ -205,6 +380,26 @@ a:hover {
   /* body {
     background-color: pink;
   } */
+
+  /* .nav-title {
+    font-size: 24px;
+  } */
+
+  .navbar {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .nav-title {
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
 
   #brand-link {
     float: inline-end;
