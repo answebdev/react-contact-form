@@ -8,6 +8,8 @@ import reAnimate from '../../img/re-animate.png';
 import animateCSS from '../../img/animate-css.png';
 import lightbox from '../../img/lightbox.png';
 import reactSpring from '../../img/react-spring.png';
+import arrow from '../../img/up-arrow.png';
+import ScrollToTop from 'react-scroll-up';
 
 class Home extends Component {
   render() {
@@ -25,7 +27,6 @@ class Home extends Component {
             </p>
             <hr />
           </Fade>
-
           <Row>
             <Col md={12}>
               <ScrollAnimation animateIn='bounceInRight'>
@@ -75,7 +76,6 @@ class Home extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
-
           <Row>
             <Col md={12}>
               <ScrollAnimation animateIn='bounceInLeft'>
@@ -118,7 +118,6 @@ class Home extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
-
           <Row>
             <Col md={12}>
               <ScrollAnimation animateIn='bounceInRight'>
@@ -164,7 +163,6 @@ class Home extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
-
           <Row>
             <Col md={12}>
               <ScrollAnimation animateIn='bounceInLeft'>
@@ -207,7 +205,6 @@ class Home extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
-
           <Row>
             <Col md={12}>
               <ScrollAnimation animateIn='bounceInRight'>
@@ -254,7 +251,62 @@ class Home extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
-
+          <Row>
+            <Col md={4}>
+              <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
+                <Card style={{ width: '18rem', marginBottom: '80px' }}>
+                  <Card.Img
+                    variant='top'
+                    src='https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                  />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant='primary'>Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </ScrollAnimation>
+            </Col>
+            <Col md={4}>
+              <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
+                <Card style={{ width: '18rem', marginBottom: '80px' }}>
+                  <Card.Img
+                    variant='top'
+                    src='https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                  />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant='primary'>Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </ScrollAnimation>
+            </Col>
+            <Col md={4}>
+              <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
+                <Card style={{ width: '18rem', marginBottom: '80px' }}>
+                  <Card.Img
+                    variant='top'
+                    src='https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                  />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant='primary'>Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </ScrollAnimation>
+            </Col>
+          </Row>
           <Row>
             <Col md={4}>
               <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
@@ -312,62 +364,20 @@ class Home extends Component {
             </Col>
           </Row>
 
-          <Row>
-            <Col md={4}>
-              <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
-                <Card style={{ width: '18rem', marginBottom: '80px' }}>
-                  <Card.Img
-                    variant='top'
-                    src='https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-                  />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant='primary'>Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </ScrollAnimation>
-            </Col>
-            <Col md={4}>
-              <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
-                <Card style={{ width: '18rem', marginBottom: '80px' }}>
-                  <Card.Img
-                    variant='top'
-                    src='https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-                  />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant='primary'>Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </ScrollAnimation>
-            </Col>
-            <Col md={4}>
-              <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
-                <Card style={{ width: '18rem', marginBottom: '80px' }}>
-                  <Card.Img
-                    variant='top'
-                    src='https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-                  />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant='primary'>Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </ScrollAnimation>
-            </Col>
-          </Row>
+          {/* React-scroll-up: */}
+          <ScrollToTop showUnder={160}>
+            <span>
+              <img
+                src={arrow}
+                style={{
+                  width: '10%',
+                  height: 'auto',
+                  float: 'right',
+                }}
+                alt=''
+              ></img>
+            </span>
+          </ScrollToTop>
         </Container>
       </div>
     );
