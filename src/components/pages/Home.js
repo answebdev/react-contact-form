@@ -8,6 +8,7 @@ import reAnimate from '../../img/re-animate.png';
 import animateCSS from '../../img/animate-css.png';
 import lightbox from '../../img/lightbox.png';
 import reactSpring from '../../img/react-spring.png';
+import scroll from '../../img/scroll-button.png';
 // import arrow from '../../img/up-arrow.png';
 // import ScrollToTop from 'react-scroll-up';
 
@@ -207,6 +208,7 @@ class Home extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
+
           <Row>
             <Col md={12}>
               <ScrollAnimation animateIn='bounceInRight'>
@@ -243,6 +245,55 @@ class Home extends Component {
                       className='button'
                       variant='primary'
                       href='https://www.react-spring.io/'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Enter <i class='far fa-arrow-alt-circle-right'></i>
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </ScrollAnimation>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={12}>
+              <ScrollAnimation animateIn='bounceInLeft'>
+                <Card style={{ marginBottom: '40px' }}>
+                  {/* <Card.Header>Framework</Card.Header> */}
+                  <Card.Body>
+                    <Card.Title>
+                      <strong>React-Scroll-Up-Button</strong>
+                    </Card.Title>
+
+                    <Image
+                      src={scroll}
+                      style={{
+                        width: '35%',
+                        height: 'auto',
+                        float: 'right',
+                        marginLeft: '10px',
+                      }}
+                      fluid
+                    />
+                    <Card.Text>
+                      <p>React component for a fixed scroll to top button.</p>
+                      <p>
+                        The default button can be used, or it can be customized
+                        to look like any button you want. The component contains
+                        all the code neccassary to scroll to the top of the page
+                        (or desired position) utilizing easing effects.
+                      </p>
+                      <p>
+                        Different styles have been added that you can copy and
+                        paste into this component to quickly acheive a style you
+                        can appreciate and fits your websites look and feel.
+                      </p>
+                    </Card.Text>
+                    <Button
+                      className='button'
+                      variant='primary'
+                      href='https://react-scroll-up-button.com/'
                       rel='noopener noreferrer'
                       target='_blank'
                     >
@@ -366,7 +417,8 @@ class Home extends Component {
             </Col>
           </Row>
 
-          {/* React-scroll-up (use with my Canva arrow png): */}
+          {/* React-scroll-up (use with my Canva arrow png):
+          https://milosjanda.github.io/react-scroll-up/ */}
           {/* <ScrollToTop showUnder={160}>
             <span>
               <img
