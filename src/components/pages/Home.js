@@ -215,7 +215,7 @@ class Home extends Component {
                   {/* <Card.Header>Framework</Card.Header> */}
                   <Card.Body>
                     <Card.Title>
-                      <strong>React Spring</strong>
+                      <strong>React-Spring</strong>
                     </Card.Title>
 
                     <Image
