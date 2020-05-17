@@ -4,8 +4,10 @@ import { Container, Col, Row, Card, Button, Image } from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Fade from 'react-reveal/Fade';
 import reactBootstrap from '../../img/react-bootstrap.png';
-import lightbox from '../../img/lightbox.png';
 import reAnimate from '../../img/re-animate.png';
+import animateCSS from '../../img/animate-css.png';
+import lightbox from '../../img/lightbox.png';
+import reactSpring from '../../img/react-spring.png';
 
 class Home extends Component {
   render() {
@@ -152,6 +154,96 @@ class Home extends Component {
                       className='button'
                       variant='primary'
                       href='https://lokeshdhakar.com/projects/lightbox2/'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Enter <i class='far fa-arrow-alt-circle-right'></i>
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </ScrollAnimation>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={12}>
+              <ScrollAnimation animateIn='bounceInLeft'>
+                <Card style={{ marginBottom: '40px' }}>
+                  {/* <Card.Header>Framework</Card.Header> */}
+                  <Card.Body>
+                    <Card.Title>
+                      <strong>Animate.css</strong>
+                    </Card.Title>
+
+                    <Image
+                      src={animateCSS}
+                      style={{
+                        width: '35%',
+                        height: 'auto',
+                        float: 'right',
+                        marginLeft: '10px',
+                      }}
+                      fluid
+                    />
+                    <Card.Text>
+                      <p>Just-add-water CSS animations.</p>
+                      <p>
+                        A library of ready-to-use, cross-browser animations for
+                        use in your web projects. Great for emphasis, home
+                        pages, sliders, and attention-guiding hints.
+                      </p>
+                    </Card.Text>
+                    <Button
+                      className='button'
+                      variant='primary'
+                      href='https://animate.style/'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Enter <i class='far fa-arrow-alt-circle-right'></i>
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </ScrollAnimation>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={12}>
+              <ScrollAnimation animateIn='bounceInRight'>
+                <Card style={{ marginBottom: '40px' }}>
+                  {/* <Card.Header>Framework</Card.Header> */}
+                  <Card.Body>
+                    <Card.Title>
+                      <strong>React Spring</strong>
+                    </Card.Title>
+
+                    <Image
+                      src={reactSpring}
+                      style={{
+                        width: '35%',
+                        height: 'auto',
+                        float: 'right',
+                        marginLeft: '10px',
+                      }}
+                      fluid
+                    />
+                    <Card.Text>
+                      <p>
+                        Bring your components to life with simple spring
+                        animation primitives.
+                      </p>
+                      <p>
+                        React-spring is a spring-physics based animation library
+                        that should cover most of your UI related animation
+                        needs. It gives you tools flexible enough to confidently
+                        cast your ideas into moving interfaces.
+                      </p>
+                    </Card.Text>
+                    <Button
+                      className='button'
+                      variant='primary'
+                      href='https://www.react-spring.io/'
                       rel='noopener noreferrer'
                       target='_blank'
                     >
