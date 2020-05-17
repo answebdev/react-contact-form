@@ -67,11 +67,12 @@ const About = () => {
               onMouseLeave={() => set({ xys: [0, 0, 1] })}
               style={{ transform: props.xys.interpolate(trans) }}
             />
-
+            <br />
             <br />
 
             {/* Lightbox2 Lokesh Dhakar */}
-            {/* <a
+            {/* <h3>Using Lightbox, by Lokesh Dhakar</h3>
+            <a
               href={childSmall}
               data-lightbox='Child'
               alt='Child'

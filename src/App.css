@@ -171,6 +171,10 @@ a:hover {
   color: #3e63bd;
 }
 
+.button {
+  background: #3e63bd;
+}
+
 #submit-btn {
   margin-bottom: 80px;
   background: #3e63bd;
