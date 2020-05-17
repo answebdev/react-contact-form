@@ -370,7 +370,8 @@ class Home extends Component {
               <img
                 src={arrow}
                 style={{
-                  width: '10%',
+                  // width: '10%',
+                  width: '3em',
                   height: 'auto',
                   float: 'right',
                 }}
