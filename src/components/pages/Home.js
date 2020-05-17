@@ -8,8 +8,10 @@ import reAnimate from '../../img/re-animate.png';
 import animateCSS from '../../img/animate-css.png';
 import lightbox from '../../img/lightbox.png';
 import reactSpring from '../../img/react-spring.png';
-import arrow from '../../img/up-arrow.png';
-import ScrollToTop from 'react-scroll-up';
+// import arrow from '../../img/up-arrow.png';
+// import ScrollToTop from 'react-scroll-up';
+
+import ScrollUpButton from 'react-scroll-up-button';
 
 class Home extends Component {
   render() {
@@ -364,8 +366,8 @@ class Home extends Component {
             </Col>
           </Row>
 
-          {/* React-scroll-up: */}
-          <ScrollToTop showUnder={160}>
+          {/* React-scroll-up (use with my Canva arrow png): */}
+          {/* <ScrollToTop showUnder={160}>
             <span>
               <img
                 src={arrow}
@@ -378,7 +380,16 @@ class Home extends Component {
                 alt=''
               ></img>
             </span>
-          </ScrollToTop>
+          </ScrollToTop> */}
+
+          <div>
+            <ScrollUpButton
+              style={{
+                marginBottom: '30px',
+                background: '#3e63bd',
+              }}
+            />
+          </div>
         </Container>
       </div>
     );

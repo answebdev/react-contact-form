@@ -16,13 +16,31 @@
   padding: 0 2rem;
 }
 
-html {
+/* html {
   height: 100%;
   width: 100%;
+} */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
+
+/* Styles for Sticky (But Not Fixed) Footer */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ========================= */
 
 body {
   font-family: 'Oxygen', sans-serif;
+  /* Styles for Sticky (But Not Fixed) Footer */
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 .react-spring-card {
@@ -185,14 +203,27 @@ a:hover {
 }
 
 /* Footer */
-.footer {
+/* .footer {
   background: #3e63bd;
   clear: both;
   position: relative;
   height: 100%;
   padding: 10px;
   text-align: center;
+} */
+
+/* Sticky (But Not Fixed) Footer,
+Source: https://chrisbracco.com/css-sticky-footer-effect/ */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background: #3e63bd;
+  text-align: center;
 }
+/* ========================= */
 
 #footer-text {
   color: #ffffff;
