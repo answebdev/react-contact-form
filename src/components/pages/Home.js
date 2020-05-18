@@ -23,7 +23,7 @@ class Home extends Component {
         </Helmet>
         <Container fluid>
           <Fade left>
-            <h1>Home Page</h1>
+            <h3>Home Page</h3>
             <p>
               Welcome to React Playground. Scroll down to see some of my
               favorite tools and technologies.

@@ -36,7 +36,8 @@ const About = () => {
       <Container fluid>
         <Row>
           <Col md={12}>
-            <h1>About Page</h1>
+            <h3>About Page</h3>
+            <hr />
           </Col>
         </Row>
 

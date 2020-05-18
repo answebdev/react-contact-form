@@ -14,7 +14,8 @@ export class ContactForm extends Component {
             <Row>
               <Col md={3}></Col>
               <Col md={6}>
-                <h1>Contact Form</h1>
+                <h3>Contact Form</h3>
+                <hr />
                 <div className='content'>
                   <p>
                     Feel free to contact us with any questions. Submit your
