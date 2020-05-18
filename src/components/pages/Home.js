@@ -438,7 +438,9 @@ class Home extends Component {
             <ScrollUpButton
               style={{
                 marginBottom: '30px',
+                marginRight: '-15px',
                 background: '#3e63bd',
+                borderRadius: '5px',
               }}
             />
           </div>
