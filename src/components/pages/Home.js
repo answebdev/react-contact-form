@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Reach Playground</title>
+        <title>React Playground</title>
         <style type='text/css'>{`
         * {
           box-sizing: border-box;
@@ -54,6 +54,19 @@ const Home = () => {
           transform-style: preserve-3d;
           perspective: 100px;
         }
+
+        // header:before {
+        //   background: url('https://images.pexels.com/photos/144474/pexels-photo-144474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        //   background-size: cover, cover;
+        //   background-position: center, center;
+        //   content: '';
+        //   position: absolute;
+        //   top: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   left: 0;
+        //   z-index: -1;
+        // }
       
         #welcome-msg {
           // font-size: 50px;
