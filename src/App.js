@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
-import ContactForm from './components/pages/ContactForm';
+import Blog from './components/pages/Blog';
 import About from './components/pages/About';
+import ContactForm from './components/pages/ContactForm';
 import Success from './components/pages/Success';
 import Error from './components/pages/Error';
 import Navigation from './components/layout/Navigation';
@@ -22,8 +23,9 @@ function App() {
             <div className='container'>
               <Switch>
                 <Route exact path='/' component={Home} />
-                <Route exact path='/contact' component={ContactForm} />
+                <Route exact path='/blog' component={Blog} />
                 <Route exact path='/about' component={About} />
+                <Route exact path='/contact' component={ContactForm} />
                 <Route exact path='/success' component={Success} />
                 <Route component={Error} />
               </Switch>
