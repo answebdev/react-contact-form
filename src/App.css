@@ -39,7 +39,7 @@ body {
   /* Styles for Sticky (But Not Fixed) Footer */
   position: relative;
   margin: 0;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; */
   min-height: 100%;
 }
 
