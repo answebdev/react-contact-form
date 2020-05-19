@@ -23,10 +23,10 @@ class Blog extends Component {
         </Helmet>
         <Container fluid>
           <Fade left>
-            <h3>Home Page</h3>
+            <h3>Blog Page</h3>
             <p>
-              Welcome to React Playground. Scroll down to see some of my
-              favorite tools and technologies.
+              Welcome to the React Playground Blog Page. Scroll down to see some
+              of my favorite tools and technologies.
             </p>
             <hr />
           </Fade>
