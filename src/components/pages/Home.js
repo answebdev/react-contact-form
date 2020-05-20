@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Fade from 'react-reveal/Fade';
-import skirt from '../../img/skirt.png';
+import skirt from '../../img/skirt.webp';
 
 const Home = () => {
   return (
