@@ -10,6 +10,10 @@ const Home = () => {
       <Helmet>
         <title>React Playground</title>
         <style type='text/css'>{`
+        body {
+          background-color: #3e63bd;
+        }
+
         .container {
           max-width: 100%;
           height: 100%;
