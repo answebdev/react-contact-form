@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Fade from 'react-reveal/Fade';
-import skirt from '../../img/skirt.png';
+// import skirt from '../../img/skirt.png';
 
 const Home = () => {
   return (
@@ -50,7 +50,7 @@ const Home = () => {
             <header
               id='landing-header'
               style={{
-                backgroundImage: `url(${skirt})`,
+                backgroundImage: `url('https://images.pexels.com/photos/144474/pexels-photo-144474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
