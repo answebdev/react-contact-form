@@ -30,7 +30,8 @@ export class ContactForm extends Component {
                     action='/success'
                     name='react-contact-form'
                     method='POST'
-                    netlify
+                    data-netlify='true'
+                    // netlify
                   >
                     <Form.Group>
                       <Form.Label>Name</Form.Label>
