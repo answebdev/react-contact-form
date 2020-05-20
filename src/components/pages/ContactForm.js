@@ -26,7 +26,7 @@ export class ContactForm extends Component {
                     </a>
                     <span style={{ marginLeft: '-10px' }}>.</span>
                   </p>
-                  <Form
+                  <form
                     action='/success'
                     name='react-contact-form'
                     method='POST'
@@ -63,7 +63,7 @@ export class ContactForm extends Component {
                     >
                       Send Message
                     </Button>
-                  </Form>
+                  </form>
                   <br />
                 </div>
               </Col>
