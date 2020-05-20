@@ -26,6 +26,36 @@ html {
   box-sizing: border-box;
 }
 
+/* Landing Page Styles */
+#landing-header {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+
+#welcome-msg {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Dancing Script', cursive;
+  color: #ffffff;
+}
+
+#welcome-msg:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#welcome:hover {
+  color: #3e63bd;
+}
+
 /* Styles for Sticky (But Not Fixed) Footer */
 *,
 *:before,
