@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
+import Fade from 'react-reveal/Fade';
 import skirt from '../../img/skirt.png';
 
 const Home = () => {
@@ -95,11 +96,13 @@ const Home = () => {
                 backgroundPosition: 'center',
               }}
             >
-              <h1 id='welcome-msg'>
-                <a id='welcome' href='/blog'>
-                  Welcome
-                </a>
-              </h1>
+              <Fade up>
+                <h1 id='welcome-msg'>
+                  <a id='welcome' href='/blog'>
+                    Welcome
+                  </a>
+                </h1>
+              </Fade>
             </header>
           </Col>
         </Row>
