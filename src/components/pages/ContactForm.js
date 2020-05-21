@@ -26,12 +26,11 @@ export class ContactForm extends Component {
                     </a>
                     <span style={{ marginLeft: '-10px' }}>.</span>
                   </p>
-                  <Form
+                  <form
                     action='/success'
                     name='react-contact-form'
                     method='POST'
                     data-netlify='true'
-                    // netlify
                   >
                     <Form.Group>
                       <Form.Label>Name</Form.Label>
@@ -63,7 +62,7 @@ export class ContactForm extends Component {
                     >
                       Send Message
                     </Button>
-                  </Form>
+                  </form>
                   <br />
                 </div>
               </Col>
