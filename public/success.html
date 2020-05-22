@@ -21,6 +21,10 @@
         transform: translate(-50%, -50%);
     }
 
+    #back-div {
+        text-align: center;
+    }
+
     #back-btn {
         background: #3e63bd;
     }
@@ -31,9 +35,11 @@
     <div id='success-msg'>
         <h2 class='text-center'>Thank you!</h2>
         <p class='text-center'>Your message has been sent.</p>
-        <a class='btn btn-primary' id='back-btn' onclick='history.back()' role='button' href='/contact'>
-            <i class="fas fa-arrow-left"></i> Back to Form
-        </a>
+        <div id="back-div">
+            <a class='btn btn-primary' id='back-btn' onclick='history.back()' role='button' href='/contact'>
+                <i class="fas fa-arrow-left"></i> Back to Form
+            </a>
+        </div>
     </div>
 </body>
 

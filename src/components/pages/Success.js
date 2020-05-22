@@ -15,9 +15,11 @@ const Success = () => {
               <h2 className='text-center'>Thank you!</h2>
               <p></p>
               <p className='text-center'>Your message has been sent.</p>
-              <a class='btn btn-primary' id='back-btn' href='/contact'>
-                Back to Form
-              </a>
+              <div id='back-div'>
+                <a class='btn btn-primary' id='back-btn' href='/contact'>
+                  <i class='fas fa-arrow-left'></i> Back to Form
+                </a>
+              </div>
             </div>
           </Col>
         </Row>

@@ -242,6 +242,10 @@ a:hover {
   background: #3e63bd;
 }
 
+#back-div {
+  text-align: center;
+}
+
 /* Footer */
 /* .footer {
   background: #3e63bd;
