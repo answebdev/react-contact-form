@@ -32,6 +32,7 @@ export class ContactForm extends Component {
                       type='hidden'
                       name='form-name'
                       value='react-playground-contact-form'
+                      data-netlify="true"
                     />
                     <Form.Group>
                       <Form.Label>Name</Form.Label>
