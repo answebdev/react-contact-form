@@ -32,7 +32,7 @@ export class ContactForm extends Component {
                       <Form.Label>Name</Form.Label>
                       <Form.Control
                         type='name'
-                        name='email'
+                        name='name'
                         placeholder='Name'
                       />
                     </Form.Group>
