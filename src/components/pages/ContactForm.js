@@ -28,6 +28,11 @@ export class ContactForm extends Component {
                     method='POST'
                     data-netlify='true'
                   >
+                    <input
+                      type='hidden'
+                      name='form-name'
+                      value='react-playground-contact-form'
+                    />
                     <Form.Group>
                       <Form.Label>Name</Form.Label>
                       <Form.Control
