@@ -23,7 +23,6 @@ export class ContactForm extends Component {
                     as soon as possible.
                   </p>
                   <Form
-                    action='/success'
                     name='react-playground-contact-form'
                     method='POST'
                     data-netlify='true'
