@@ -27,7 +27,6 @@ export class ContactForm extends Component {
                     name='react-playground-contact-form'
                     method='POST'
                     data-netlify='true'
-                    data-netlify-recaptcha='true'
                   >
                     <input
                       type='hidden'
