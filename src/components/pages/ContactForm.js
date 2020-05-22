@@ -37,7 +37,7 @@ export class ContactForm extends Component {
                       <Form.Control type='name' placeholder='Name' />
                     </Form.Group>
                     <Form.Group controlId='formBasicEmail'>
-                      <Form.Label>Email address</Form.Label>
+                      <Form.Label>Email Address</Form.Label>
                       <Form.Control
                         type='email'
                         placeholder='email@example.com'
