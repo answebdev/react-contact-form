@@ -20,9 +20,14 @@ export class ContactForm extends Component {
                   <p>
                     Feel free to contact us with any questions. Submit your
                     name, email, and a short message, and we'll get back to you
-                    as soon as possible. Click here.
+                    as soon as possible. Click
+                    <a className='click' href='/success'>
+                      <span style={{ marginLeft: '-10px' }}> here</span>
+                    </a>
+                    <span style={{ marginLeft: '-10px' }}>.</span>
                   </p>
                   <Form
+                    action='/success'
                     name='react-contact-form'
                     method='POST'
                     data-netlify='true'
