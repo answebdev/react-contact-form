@@ -30,12 +30,17 @@ export class ContactForm extends Component {
                   >
                     <Form.Group>
                       <Form.Label>Name</Form.Label>
-                      <Form.Control type='name' placeholder='Name' />
+                      <Form.Control
+                        type='name'
+                        name='email'
+                        placeholder='Name'
+                      />
                     </Form.Group>
                     <Form.Group controlId='formBasicEmail'>
                       <Form.Label>Email Address</Form.Label>
                       <Form.Control
                         type='email'
+                        name='email'
                         placeholder='email@example.com'
                       />
                       <Form.Text className='text-muted'>
@@ -44,7 +49,7 @@ export class ContactForm extends Component {
                     </Form.Group>
                     <Form.Group controlId='exampleForm.ControlTextarea1'>
                       <Form.Label>Message</Form.Label>
-                      <Form.Control as='textarea' rows='5' />
+                      <Form.Control as='textarea' name='message' rows='5' />
                     </Form.Group>
                     <div className='field'>
                       <div data-netlify-recaptcha='true'></div>
