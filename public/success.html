@@ -10,9 +10,24 @@
     <title>Success</title>
 </head>
 
+<style>
+    #success-msg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+
 <body>
-    <h2 class='text-center'>Thank you!</h2>
-    <p class='text-center'>Your message has been sent.</p>
+    <div id='success-msg'>
+        <h2 class='text-center'>Thank you!</h2>
+        <p class='text-center'>Your message has been sent.</p>
+        <a class='btn btn-primary' id='error-btn' onclick='history.back()' role='button' href='/contact'>
+            Back to Form
+        </a>
+    </div>
 </body>
 
 </html>
