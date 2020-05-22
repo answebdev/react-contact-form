@@ -27,6 +27,7 @@ export class ContactForm extends Component {
                     <span style={{ marginLeft: '-10px' }}>.</span>
                   </p>
                   <Form
+                    action='/success'
                     name='react-contact-form'
                     method='POST'
                     data-netlify='true'
