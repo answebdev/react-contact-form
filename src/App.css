@@ -56,6 +56,7 @@ html {
   color: #3e63bd;
 }
 
+#error-msg,
 #success-msg {
   position: fixed;
   top: 50%;
@@ -240,6 +241,7 @@ a:hover {
 #back-btn,
 #error-btn {
   background: #3e63bd;
+  border-color: #3e63bd;
 }
 
 #back-div {

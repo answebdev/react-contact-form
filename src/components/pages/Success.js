@@ -16,7 +16,7 @@ const Success = () => {
               <p></p>
               <p className='text-center'>Your message has been sent.</p>
               <div id='back-div'>
-                <a class='btn btn-primary' id='back-btn' href='/contact'>
+                <a class='btn btn-primary btn-sm' id='back-btn' href='/contact'>
                   <i class='fas fa-arrow-left'></i> Back to Form
                 </a>
               </div>

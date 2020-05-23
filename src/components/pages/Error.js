@@ -11,17 +11,16 @@ const Error = () => {
       <Container fluid>
         <Row>
           <Col md={12}>
-            <h1 className='text-center'>404 Page Not Found</h1>
-          </Col>
-        </Row>
-        <br />
-        <Row>
-          <Col md={12}>
-            <p className='text-center'>
-              <a class='btn btn-primary' id='error-btn' href='/'>
-                <i className='fa fa-home'></i> Take Me Home
-              </a>
-            </p>
+            <div id='error-msg'>
+              <h2 className='text-center'>Oops!</h2>
+              <p></p>
+              <p className='text-center'>404 Page Not Found.</p>
+              <div id='back-div'>
+                <a class='btn btn-primary btn-sm' id='error-btn' href='/'>
+                  <i className='fa fa-home'></i> Take Me Home
+                </a>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
