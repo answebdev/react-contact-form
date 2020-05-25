@@ -1,1 +1,1 @@
-## Practice React App
+## React Playground App
