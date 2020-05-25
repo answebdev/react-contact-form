@@ -71,8 +71,17 @@ class Blog extends Component {
                       href='https://react-bootstrap.github.io/'
                       rel='noopener noreferrer'
                       target='_blank'
+                      style={{ marginRight: '5px' }}
                     >
                       Enter <i class='far fa-arrow-alt-circle-right'></i>
+                    </Button>
+                    <Button
+                      className='button'
+                      variant='primary'
+                      href='/blog/react-examples'
+                      style={{ marginRight: '5px' }}
+                    >
+                      Examples
                     </Button>
                   </Card.Body>
                 </Card>

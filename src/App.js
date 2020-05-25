@@ -6,6 +6,7 @@ import About from './components/pages/About';
 import ContactForm from './components/pages/ContactForm';
 import Success from './components/pages/Success';
 import Error from './components/pages/Error';
+import ReactExamples from './components/pages/ReactExamples';
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +25,11 @@ function App() {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/blog' component={Blog} />
+                <Route
+                  exact
+                  path='/blog/react-examples'
+                  component={ReactExamples}
+                />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/contact' component={ContactForm} />
                 <Route exact path='/success' component={Success} />
