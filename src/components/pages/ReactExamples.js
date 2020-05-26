@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { Container, Col, Row } from 'react-bootstrap';
+import {
+  EmailIcon,
+  FacebookIcon,
+  LineIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+} from 'react-share';
 
 class ReactExamples extends Component {
   render() {
@@ -13,6 +20,25 @@ class ReactExamples extends Component {
           <h3>React Examples Page</h3>
           <p>Welcome to the React Examples Page.</p>
           <hr />
+          <p>
+            <EmailIcon size={32} round={true} style={{ marginRight: '5px' }} />
+            <FacebookIcon
+              size={32}
+              round={true}
+              style={{ marginRight: '5px' }}
+            />
+            <LinkedinIcon
+              size={32}
+              round={true}
+              style={{ marginRight: '5px' }}
+            />
+            <WhatsappIcon
+              size={32}
+              round={true}
+              style={{ marginRight: '5px' }}
+            />
+            <LineIcon size={32} round={true} style={{ marginRight: '5px' }} />
+          </p>
           <Row>
             <Col md={12}>
               <br />
