@@ -12,7 +12,7 @@ import 'react-sharingbuttons/dist/main.css';
 
 class ReactExamples extends Component {
   render() {
-    const url = 'https://github.com/caspg/react-sharingbuttons';
+    const url = 'https://silly-feynman.netlify.app/blog/react-examples';
     const shareText = 'Check this site!';
     return (
       <div>
