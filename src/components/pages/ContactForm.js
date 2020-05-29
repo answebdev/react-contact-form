@@ -1,9 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
+import Recaptcha from 'react-recaptcha';
 
 export class ContactForm extends Component {
   render() {
+    var Recaptcha = require('react-recaptcha');
     return (
       <Fragment>
         <div>
@@ -69,6 +71,7 @@ export class ContactForm extends Component {
                       Send Message
                     </Button>
                   </Form>
+                  <Recaptcha sitekey='xxxxxxxxxxxxxxxxxxxx' />,
                   <br />
                 </div>
               </Col>
