@@ -1,11 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-// import Recaptcha from 'react-recaptcha';
 
 export class ContactForm extends Component {
   render() {
-    var Recaptcha = require('react-recaptcha');
     return (
       <Fragment>
         <div>
@@ -30,6 +28,10 @@ export class ContactForm extends Component {
                     method='POST'
                     data-netlify='true'
                   >
+                    <div
+                      class='g-recaptcha'
+                      data-sitekey='6Lc9jf0UAAAAANVPxKQp4lKxW3yX-OHx7FVv5Jv6'
+                    ></div>
                     <input
                       type='hidden'
                       name='form-name'
@@ -71,8 +73,6 @@ export class ContactForm extends Component {
                       Send Message
                     </Button>
                   </Form>
-                  <Recaptcha sitekey='6Lf4iv0UAAAAAErfuYbTknxqebHhyZ8fXkCO3ECS' />
-                  ,
                   <br />
                 </div>
               </Col>
