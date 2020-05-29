@@ -28,10 +28,6 @@ export class ContactForm extends Component {
                     method='POST'
                     data-netlify='true'
                   >
-                    <div
-                      class='g-recaptcha'
-                      data-sitekey='6Lc9jf0UAAAAANVPxKQp4lKxW3yX-OHx7FVv5Jv6'
-                    ></div>
                     <input
                       type='hidden'
                       name='form-name'
