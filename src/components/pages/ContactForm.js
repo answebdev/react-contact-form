@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import Recaptcha from 'react-recaptcha';
+// import Recaptcha from 'react-recaptcha';
 
 export class ContactForm extends Component {
   render() {
@@ -71,7 +71,8 @@ export class ContactForm extends Component {
                       Send Message
                     </Button>
                   </Form>
-                  <Recaptcha sitekey='xxxxxxxxxxxxxxxxxxxx' />,
+                  <Recaptcha sitekey='6Lf4iv0UAAAAAErfuYbTknxqebHhyZ8fXkCO3ECS' />
+                  ,
                   <br />
                 </div>
               </Col>
