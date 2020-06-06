@@ -14,6 +14,11 @@ import scroll from '../../img/scroll-button.png';
 
 import ScrollUpButton from 'react-scroll-up-button';
 
+import { MDBIcon, MDBContainer, MDBBtn } from 'mdbreact';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+// import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+
 class Blog extends Component {
   render() {
     return (
@@ -28,6 +33,35 @@ class Blog extends Component {
               Welcome to the React Playground Blog Page. Scroll down to see some
               of my favorite tools and technologies.
             </p>
+
+            <MDBContainer>
+              <MDBBtn size='md' tag='a' floating social='fb'>
+                <MDBIcon fab icon='facebook-f' />
+              </MDBBtn>
+              <MDBBtn size='md' tag='a' floating social='tw'>
+                <MDBIcon fab icon='twitter' />
+              </MDBBtn>
+              <MDBBtn size='md' tag='a' floating social='gplus'>
+                <MDBIcon fab icon='google-plus-g' />
+              </MDBBtn>
+              <MDBBtn size='md' tag='a' floating social='li'>
+                <MDBIcon fab icon='linkedin-in' />
+              </MDBBtn>
+              <MDBBtn size='md' tag='a' floating social='ins'>
+                <MDBIcon fab icon='instagram' />
+              </MDBBtn>
+              <MDBBtn size='md' tag='a' floating social='pin'>
+                <MDBIcon fab icon='pinterest' />
+              </MDBBtn>
+
+              <MDBBtn size='md' tag='a' floating social='git'>
+                <MDBIcon fab icon='github' />
+              </MDBBtn>
+
+              <MDBBtn size='md' tag='a' floating social='email'>
+                <MDBIcon icon='envelope' />
+              </MDBBtn>
+            </MDBContainer>
             <hr />
           </Fade>
           <Row>
