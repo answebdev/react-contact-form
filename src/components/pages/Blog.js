@@ -14,6 +14,8 @@ import scroll from '../../img/scroll-button.png';
 
 import ScrollUpButton from 'react-scroll-up-button';
 
+import skirt from '../../img/skirt.webp';
+
 // import { InlineReactionButtons } from 'sharethis-reactjs';
 import { InlineShareButtons } from 'sharethis-reactjs';
 import { StickyShareButtons } from 'sharethis-reactjs';
@@ -70,7 +72,7 @@ class Blog extends Component {
 
                 // OPTIONAL PARAMETERS
                 url: 'https://silly-feynman.netlify.app/blog', // (defaults to current url)
-                image: '../../img/skirt.webp', // (defaults to og:image or twitter:image)
+                image: `url(${skirt})`, // (defaults to og:image or twitter:image)
                 description: 'This is the description', // (defaults to og:description or twitter:description)
                 title: 'Title here', // (defaults to og:title or twitter:title)
                 message: 'Thee message', // (only for email sharing)
