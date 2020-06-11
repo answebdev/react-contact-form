@@ -69,11 +69,11 @@ class Blog extends Component {
                 top: 160, // offset in pixels from the top of the page
 
                 // OPTIONAL PARAMETERS
-                url: 'https://www.sharethis.com', // (defaults to current url)
-                image: 'https://bit.ly/2CMhCMC', // (defaults to og:image or twitter:image)
-                description: 'custom text', // (defaults to og:description or twitter:description)
-                title: 'custom title', // (defaults to og:title or twitter:title)
-                message: 'custom email text', // (only for email sharing)
+                url: 'https://silly-feynman.netlify.app/blog', // (defaults to current url)
+                image: '../../img/skirt.webp', // (defaults to og:image or twitter:image)
+                description: 'This is the description', // (defaults to og:description or twitter:description)
+                title: 'Title here', // (defaults to og:title or twitter:title)
+                message: 'Thee message', // (only for email sharing)
                 subject: 'custom email subject', // (only for email sharing)
                 username: 'custom twitter handle', // (only for twitter sharing)
               }}
