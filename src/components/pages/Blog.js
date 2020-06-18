@@ -14,11 +14,9 @@ import scroll from '../../img/scroll-button.png';
 
 import ScrollUpButton from 'react-scroll-up-button';
 
-import skirt from '../../img/skirt.webp';
-
 // import { InlineReactionButtons } from 'sharethis-reactjs';
 import { InlineShareButtons } from 'sharethis-reactjs';
-import { StickyShareButtons } from 'sharethis-reactjs';
+// import { StickyShareButtons } from 'sharethis-reactjs';
 // import { InlineFollowButtons } from 'sharethis-reactjs';
 
 class Blog extends Component {
@@ -44,46 +42,9 @@ class Blog extends Component {
             </p>
             <hr />
 
-            <StickyShareButtons
-              config={{
-                alignment: 'left', // alignment of buttons (left, right)
-                color: 'social', // set the color of buttons (social, white)
-                enabled: true, // show/hide buttons (true, false)
-                font_size: 16, // font size for the buttons
-                hide_desktop: false, // hide buttons on desktop (true, false)
-                labels: 'counts', // button labels (cta, counts, null)
-                language: 'en', // which language to use (see LANGUAGES)
-                min_count: 0, // hide react counts less than min_count (INTEGER)
-                networks: [
-                  // which networks to include (see SHARING NETWORKS)
-                  'linkedin',
-                  'facebook',
-                  'twitter',
-                  'pinterest',
-                  'email',
-                ],
-                padding: 12, // padding within buttons (INTEGER)
-                radius: 4, // the corner radius on each button (INTEGER)
-                show_total: true, // show/hide the total share count (true, false)
-                show_mobile: true, // show/hide the buttons on mobile (true, false)
-                show_toggle: true, // show/hide the toggle buttons (true, false)
-                size: 48, // the size of each button (INTEGER)
-                top: 160, // offset in pixels from the top of the page
-
-                // OPTIONAL PARAMETERS
-                url: 'https://silly-feynman.netlify.app/blog', // (defaults to current url)
-                image: `url(${skirt})`, // (defaults to og:image or twitter:image)
-                description: 'This is the description', // (defaults to og:description or twitter:description)
-                title: 'Title here', // (defaults to og:title or twitter:title)
-                message: 'Thee message', // (only for email sharing)
-                subject: 'custom email subject', // (only for email sharing)
-                username: 'custom twitter handle', // (only for twitter sharing)
-              }}
-            />
-
             <InlineShareButtons
               config={{
-                alignment: 'center', // alignment of buttons (left, center, right)
+                alignment: 'left', // alignment of buttons (left, center, right)
                 color: 'social', // set the color of buttons (social, white)
                 enabled: true, // show/hide buttons (true, false)
                 font_size: 16, // font size for the buttons
@@ -91,11 +52,12 @@ class Blog extends Component {
                 language: 'en', // which language to use (see LANGUAGES)
                 networks: [
                   // which networks to include (see SHARING NETWORKS)
-                  'whatsapp',
-                  'linkedin',
-                  'messenger',
                   'facebook',
                   'twitter',
+                  'linkedin',
+                  'pinterest',
+                  'email',
+                  'sharethis',
                 ],
                 padding: 12, // padding within buttons (INTEGER)
                 radius: 4, // the corner radius on each button (INTEGER)
@@ -162,10 +124,10 @@ class Blog extends Component {
                     <Button
                       className='button'
                       variant='primary'
-                      href='/blog/react-examples'
+                      href='/blog/bootstrap-carousel'
                       style={{ marginRight: '5px' }}
                     >
-                      Examples
+                      Carousel <i class='fab fa-react'></i>
                     </Button>
                   </Card.Body>
                 </Card>
@@ -206,8 +168,17 @@ class Blog extends Component {
                       href='https://dbramwell.github.io/react-animate-on-scroll/'
                       rel='noopener noreferrer'
                       target='_blank'
+                      style={{ marginRight: '5px' }}
                     >
                       Enter <i class='far fa-arrow-alt-circle-right'></i>
+                    </Button>
+                    <Button
+                      className='button'
+                      variant='primary'
+                      href='/blog/carousel'
+                      style={{ marginRight: '5px' }}
+                    >
+                      Carousel
                     </Button>
                   </Card.Body>
                 </Card>
@@ -251,8 +222,17 @@ class Blog extends Component {
                       href='https://lokeshdhakar.com/projects/lightbox2/'
                       rel='noopener noreferrer'
                       target='_blank'
+                      style={{ marginRight: '5px' }}
                     >
                       Enter <i class='far fa-arrow-alt-circle-right'></i>
+                    </Button>
+                    <Button
+                      className='button'
+                      variant='primary'
+                      href='/blog/react-examples'
+                      style={{ marginRight: '5px' }}
+                    >
+                      Examples
                     </Button>
                   </Card.Body>
                 </Card>

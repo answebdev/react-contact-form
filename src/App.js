@@ -6,6 +6,8 @@ import About from './components/pages/About';
 import ContactForm from './components/pages/ContactForm';
 import Success from './components/pages/Success';
 import Error from './components/pages/Error';
+import BootstrapCarousel from './components/pages/BootstrapCarousel';
+import CarouselPage from './components/pages/CarouselPage';
 import ReactExamples from './components/pages/ReactExamples';
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
@@ -25,6 +27,12 @@ function App() {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/blog' component={Blog} />
+                <Route
+                  exact
+                  path='/blog/bootstrap-carousel'
+                  component={BootstrapCarousel}
+                />
+                <Route exact path='/blog/carousel' component={CarouselPage} />
                 <Route
                   exact
                   path='/blog/react-examples'
