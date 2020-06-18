@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import classroom from '../../img/1.png';
-import girlDog from '../../img/2.png';
-import skirt from '../../img/3.png';
-import drake from '../../img/4.png';
-import woman from '../../img/5.png';
+import classroom from '../../img/1.webp';
+import girlDog from '../../img/2.webp';
+import skirt from '../../img/3.webp';
+import drake from '../../img/4.webp';
+import woman from '../../img/5.webp';
 
 const BootstrapCarousel = () => {
   const [index, setIndex] = useState(0);

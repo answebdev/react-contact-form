@@ -3,9 +3,9 @@ import { Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import woman from '../../img/woman.jpg';
-import girl from '../../img/girl.jpg';
-import skirt from '../../img/skirt.png';
+import woman from '../../img/5.webp';
+import girl from '../../img/2.webp';
+import skirt from '../../img/3.webp';
 
 const CarouselPage = () => {
   return (
