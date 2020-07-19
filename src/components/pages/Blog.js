@@ -18,6 +18,7 @@ import animateCSS from '../../img/animate-css.png';
 import lightbox from '../../img/lightbox.png';
 import reactSpring from '../../img/react-spring.png';
 import scroll from '../../img/scroll-button.png';
+import rocket from '../../audio/rocket.mp3';
 // import arrow from '../../img/up-arrow.png';
 // import ScrollToTop from 'react-scroll-up';
 
@@ -751,13 +752,12 @@ class Blog extends Component {
                   <Form.Control
                     style={{ marginBottom: '10px' }}
                     id='url'
-                    placeholder='Add URL'
+                    placeholder='https://www.example.com'
                   />
                   <Form.Control id='page' placeholder='Name of Site' />
                   <Form.Text className='text-muted'>
                     Add the URL and the name of the website you want to save. A
-                    button will appear to the right for easy access. Be sure to
-                    use https:// in the URL.
+                    button will appear to the right for easy access.
                   </Form.Text>
                 </Form.Group>
 
@@ -884,7 +884,8 @@ class Blog extends Component {
                 {/* Audio Source: https://www.findsounds.com/ISAPI/search.dll?keywords=rocket */}
                 <div>
                   <audio className='audio-element'>
-                    <source src='http://77.93.223.93/dod/sound/weapons/rocket2.wav'></source>
+                    {/* <source src='http://77.93.223.93/dod/sound/weapons/rocket2.wav'></source> */}
+                    <source src={rocket}></source>
                   </audio>
                 </div>
               </Form>
