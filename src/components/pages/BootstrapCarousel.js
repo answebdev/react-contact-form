@@ -14,6 +14,10 @@ const BootstrapCarousel = () => {
     setIndex(selectedIndex);
   };
 
+  function toggleFunction() {
+    // alert('The ontoggle event occured');
+  }
+
   return (
     <div>
       <Helmet>
@@ -75,6 +79,11 @@ const BootstrapCarousel = () => {
           <Col md={4}>
             <h3>Gallery</h3>
             <p style={{ marginBottom: '80px' }}>Enjoy these pictures</p>
+
+            <details ontoggle={toggleFunction}>
+              <summary>Photo Credit Information.</summary>
+              <p>These pictures come from Pexels.</p>
+            </details>
           </Col>
         </Row>
       </Container>

@@ -11,9 +11,8 @@ import CarouselPage from './components/pages/CarouselPage';
 import ReactExamples from './components/pages/ReactExamples';
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import SimpleReactLightbox from 'simple-react-lightbox';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {

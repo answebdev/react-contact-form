@@ -24,7 +24,7 @@ const Home = () => {
         
         .navbar,
         .footer {
-          display:none;
+          display: none;
         }
 
         // header:before {

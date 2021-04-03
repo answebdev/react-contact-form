@@ -29,25 +29,101 @@ import { InlineShareButtons } from 'sharethis-reactjs';
 // import { StickyShareButtons } from 'sharethis-reactjs';
 // import { InlineFollowButtons } from 'sharethis-reactjs';
 
+// Logic for Dark and Light Modes
+function night(e) {
+  e.preventDefault();
+  const nightMode = document.getElementById('root');
+  nightMode.style.backgroundColor = '#181e24';
+  nightMode.style.color = '#76808a';
+  document.getElementById('all').style.color = '#22262a';
+  document.querySelector('h3').style.color = '#fefefe';
+  document.getElementById('beautiful').style.color = '#fefefe';
+}
+
+function day(e) {
+  e.preventDefault();
+  const dayMode = document.getElementById('root');
+  dayMode.style.backgroundColor = '#ffffff';
+  dayMode.style.color = '#2b2f32';
+  document.getElementById('all').style.color = '#2b2f32';
+  document.querySelector('h3').style.color = '#2b2f32';
+  document.getElementById('beautiful').style.color = '#2b2f32';
+}
+
+// RADIO BUTTONS
+// classList Property - Note: CSS styles are in this file using React Helmet,
+// but they can also be put in App.css (which is actually better)
+// To add a CSS class (or classes) to an element (#myDIV)
+function darkBtn() {
+  document.getElementById('myDIV').style.display = 'block';
+  document
+    .getElementById('myDIV')
+    .classList.add('mystyle', 'anotherClass', 'thirdClass');
+}
+
+// To remove a CSS class (or classes) from an element (#myDIV)
+function lightBtn() {
+  document.getElementById('myDIV').style.display = 'none';
+  document
+    .getElementById('myDIV')
+    .classList.remove('mystyle', 'anotherClass', 'thirdClass');
+}
+
+// You can also toggle a CSS class (or classes) (i.e. add a class if it's not there; remove a class if it's there)
+// In this example, only one CSS class is being toggled: 'newClassName' (see CSS for the styles for this class)
+function toggleBtn() {
+  document.getElementById('myDIV').classList.toggle('newClassName');
+}
+
 function shoot1(e) {
   e.preventDefault();
   alert('I told you so!');
   e.target.style.fontFamily = 'Dancing Script';
   e.target.style.fontSize = '16px';
   e.target.style.letterSpacing = '1.5px';
-  e.target.innerHTML = 'Thank You';
+  e.target.textContent = 'Thank You';
+  // Use textContent Method for just text
+  // If you also want HTML in the selected element, then use the innerHTML Method (see lines 47-48)
+  // e.target.textContent = 'Thank You';
 
   const x = document.getElementById('neener');
   x.style.color = '#fff';
   x.style.fontFamily = 'Dancing Script';
   x.style.fontSize = '20px';
-  x.innerHTML =
-    'neener neener neener neener neener neener neener neener neener neener neener neener';
+  x.style.letterSpacing = '1.5px';
+  x.innerHTML = '<h4>Click anywhere on the color brown.</h4>';
   const y = document.getElementById('neener-card');
   y.style.backgroundColor = 'red';
   y.style.boxShadow = '12px 12px 2px 1px rgba(0, 0, 255, .2)';
-  const z = document.getElementById('everything');
-  z.style.backgroundColor = 'brown';
+  // const z = document.getElementById('root');
+  // z.style.backgroundColor = 'brown';
+
+  // Can just set style like this w/o having to declare a variable
+  // The element 'root' comes from index.html: <div id="root"></div>
+  // Using the id of 'root' will change the background of everything to brown, not just the div in this component
+  const alles = document.getElementById('root');
+  alles.style.backgroundColor = 'brown';
+
+  // Event Listener METHOD 1
+  // alles.addEventListener('click', touch);
+  // function touch() {
+  //   // alert("Dont'touch me!");
+  //   alles.style.backgroundColor = '#4682b4';
+  //   y.style.boxShadow = '12px 12px 2px 1px #efefef';
+  //   document.getElementById('thing').src =
+  //     'https://images.pexels.com/photos/2947337/pexels-photo-2947337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
+  // }
+
+  // Event Listener METHOD 2: Anonymous Function
+  // Written as an anonymous function - the function only called here, since it has no name (anonymous).
+  // Therefore, this function cannot be used anywhere else but here.
+  // So actually, since the function is only used here, it is better to use an anonymous function here:
+  document.getElementById('root').addEventListener('click', function () {
+    alles.style.backgroundColor = '#4682b4';
+    y.style.boxShadow = '12px 12px 2px 1px #efefef';
+    document.getElementById('thing').src =
+      'https://images.pexels.com/photos/2947337/pexels-photo-2947337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
+  });
 }
 
 // Rocket Launch Event Logic
@@ -150,6 +226,7 @@ function addSite(event) {
   // Add New Inputted Website to the Beginning of the Array
   siteArray.unshift(myUrl);
   console.log('Site Array: ' + siteArray);
+  console.table(siteArray);
   // Stop Submission
   return false;
 }
@@ -175,7 +252,7 @@ function todo(event) {
   // Clear Input Field After Adding a Todo
   document.getElementById('item').value = '';
 
-  // Disaply List Group Item for Each Todo
+  // Display List Group Item for Each Todo
   const listGroup = document.getElementById('list-group');
   // Set to Default Value with 'initial' so that ListGroup Display is No Longer 'none'
   listGroup.style.display = 'initial';
@@ -240,11 +317,39 @@ class Blog extends Component {
 
   render() {
     return (
-      <div id='everything'>
+      <div id='all'>
         <Helmet>
           <title>React Playground | Blog</title>
           <style type='text/css'>{`
-    
+
+        .mystyle {
+          display: block;
+          width: 500px;
+          padding: 15px;
+          border: 1px solid black;
+          border-radius: 4px;
+        }
+
+        .anotherClass {
+          background-color: coral;
+          color: white;
+        }
+
+        .thirdClass {
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 25px;
+        }
+
+        #myDIV {
+          display: none;
+        }
+
+        .newClassName {
+          background-color: #4682b4;
+          color: white;
+        }
+
         .footer {
           bottom: -5px;
         }
@@ -268,6 +373,29 @@ class Blog extends Component {
               </a>
               <span style={{ marginLeft: '-10px' }}>section below</span>.
             </p>
+            <div
+              style={{
+                display: 'flex',
+                flexWrap: 'nowrap',
+              }}
+            >
+              <Button
+                id='moon'
+                onClick={night}
+                style={{ marginRight: '10px', borderRadius: '50%' }}
+                variant='outline-primary'
+              >
+                <i class='fas fa-moon'></i>
+              </Button>
+              <Button
+                id='sun'
+                onClick={day}
+                style={{ clear: 'both', borderRadius: '50%' }}
+                variant='outline-primary'
+              >
+                <i class='fas fa-sun'></i>
+              </Button>
+            </div>
             <hr />
 
             <InlineShareButtons
@@ -303,6 +431,42 @@ class Blog extends Component {
               }}
             />
             <br />
+
+            <Row>
+              <Col md={12}>
+                <Form.Group as={Row}>
+                  <Col sm={10}>
+                    <Form.Check
+                      id='dark-btn'
+                      onClick={darkBtn}
+                      type='radio'
+                      label='Show Peek-a-Boo'
+                      name='formHorizontalRadios'
+                      // id='formHorizontalRadios1'
+                    />
+                    <Form.Check
+                      id='light-btn'
+                      onClick={lightBtn}
+                      type='radio'
+                      label='Hide Peek-a-Boo'
+                      name='formHorizontalRadios'
+                      // id='formHorizontalRadios2'
+                    />
+                    <br />
+                    <Button
+                      id='toggle-btn'
+                      onClick={toggleBtn}
+                      variant='outline-primary'
+                    >
+                      <i class='fas fa-toggle-on'></i> Color Toggle
+                    </Button>
+                  </Col>
+                </Form.Group>
+
+                <div id='myDIV'>Peek-a-Boo!</div>
+                <br />
+              </Col>
+            </Row>
           </Fade>
           <Row>
             <Col md={12}>
@@ -723,6 +887,7 @@ class Blog extends Component {
             <Col md={4}>
               <Card style={{ width: '18rem', marginBottom: '80px' }}>
                 <Card.Img
+                  id='thing'
                   variant='top'
                   src='https://images.pexels.com/photos/3807758/pexels-photo-3807758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
                 />
